@@ -1,9 +1,9 @@
 package com.system.net.netty.client;
 
-import com.system.net.model.Command;
+import com.system.net.netty.model.Command;
 import org.jboss.netty.channel.*;
 
-public class TimeClientHandler extends SimpleChannelUpstreamHandler {
+public class ClientHandler extends SimpleChannelUpstreamHandler {
 
     @Override
     public void channelConnected(ChannelHandlerContext ctx, ChannelStateEvent e) {

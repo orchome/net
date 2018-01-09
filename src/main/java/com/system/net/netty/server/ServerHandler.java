@@ -1,9 +1,9 @@
 package com.system.net.netty.server;
 
-import com.system.net.model.Command;
+import com.system.net.netty.model.Command;
 import org.jboss.netty.channel.*;
 
-public class DiscardServerHandler extends SimpleChannelHandler {
+public class ServerHandler extends SimpleChannelHandler {
 
     @Override
     public void channelConnected(ChannelHandlerContext ctx, ChannelStateEvent e) throws Exception {

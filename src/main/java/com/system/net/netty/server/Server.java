@@ -13,7 +13,7 @@ import org.jboss.netty.handler.codec.serialization.ObjectEncoder;
 import java.net.InetSocketAddress;
 import java.util.concurrent.Executors;
 
-public class DiscardServer {
+public class Server {
     public static void main(String[] args) throws Exception {
         ChannelFactory factory = new NioServerSocketChannelFactory(
                 Executors.newCachedThreadPool(),
@@ -24,7 +24,7 @@ public class DiscardServer {
                 ChannelPipeline pipeline = Channels.pipeline();
                 pipeline.addLast("encode", new ObjectEncoder());
                 pipeline.addLast("decode", new ObjectDecoder());
-                pipeline.addLast("handler", new DiscardServerHandler());
+                pipeline.addLast("handler", new ServerHandler());
                 return pipeline;
             }
         });

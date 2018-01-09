@@ -12,7 +12,7 @@ import org.jboss.netty.handler.codec.serialization.ObjectEncoder;
 import java.net.InetSocketAddress;
 import java.util.concurrent.Executors;
 
-public class TimeClient {
+public class Client {
     public static void main(String[] args) throws Exception {
 
         ChannelFactory factory = new NioClientSocketChannelFactory(
@@ -24,7 +24,7 @@ public class TimeClient {
                 ChannelPipeline pipeline = Channels.pipeline();
                 pipeline.addLast("encode", new ObjectEncoder());
                 pipeline.addLast("decode", new ObjectDecoder());
-                pipeline.addLast("handler", new TimeClientHandler());
+                pipeline.addLast("handler", new ClientHandler());
                 return pipeline;
             }
         });
