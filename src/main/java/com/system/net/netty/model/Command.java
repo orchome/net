@@ -1,4 +1,4 @@
-package com.system.net.model;
+package com.system.net.netty.model;
 
 import java.io.Serializable;
 
