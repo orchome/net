@@ -8,3 +8,6 @@ http://orchome.com/787
 
 ## java proxy
 http://orchome.com/786
+
+## java反射getDeclaredMethods和getMethods的区别
+http://orchome.com/787
