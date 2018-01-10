@@ -12,12 +12,6 @@ import java.lang.reflect.Constructor;
 import java.net.URL;
 import java.net.URLClassLoader;
 
-/**
- * ProxyVersion_0
- *
- * @author weiwei(Duan.Yu)
- * @version 1.0.0 createTime: 2018/1/10 下午2:16
- */
 public class ProxyVersion_0 implements Serializable {
 
     private static final long serialVersionUID = 1L;
